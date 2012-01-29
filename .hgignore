@@ -1,0 +1,10 @@
+﻿syntax: glob
+binaries\
+intermediate\
+
+syntax: regexp
+\.ncb$
+\.suo$
+\.user$
+\.o$
+\.pdb$
