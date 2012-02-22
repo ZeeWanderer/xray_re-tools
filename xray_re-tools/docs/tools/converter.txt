@@ -144,7 +144,11 @@ Windows XP SP2/SP3.
 
 [Распаковка и упаковка игровых архивов]
 Команда для распаковки:
- converter -unpack <архив> [-11xx|-2215|-2945|-2947ru|-2947|-xdb]
+ converter -unpack <архив> [-11xx|-2215|-2945|-2947ru|-2947|-xdb] [-flt <маска>]
+
+Ключ -flt служит для извлечения файлов по маске. Примеры:
+ converter -unpack -xdb gamedata.db0 -flt .ogf
+ converter -unpack -2215 gamedata.xp0 -flt \levels\
 
 Команда для упаковки:
  converter -pack <папка> [-2947ru|-2947ww|-xdb|-xdb_ud <файл>]

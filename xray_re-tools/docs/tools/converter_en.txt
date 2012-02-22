@@ -133,7 +133,11 @@ Notes/problems:
 
 [Game archive packing/unpacking]
 Command line to unpack:
- converter -unpack <archive> [-11xx|-2215|-2945|-2947ru|-2947|-xdb]
+ converter -unpack <archive> [-11xx|-2215|-2945|-2947ru|-2947|-xdb] [-flt <mask>]
+
+Parameter -flt used to extract the files by the mask. Examples:
+ converter -unpack -xdb gamedata.db0 -flt .ogf
+ converter -unpack -2215 gamedata.xp0 -flt \levels\
 
 Command line to pack:
  converter -pack <folder> [-2947ru|-2947ww|-xdb|-xdb_ud <file>]
