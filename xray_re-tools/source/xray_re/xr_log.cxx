@@ -1,5 +1,6 @@
 #include <cstdlib>
 #include <cstring>
+#include <iostream>
 #include "xr_log.h"
 #include "xr_file_system.h"
 
@@ -49,7 +50,8 @@ void xr_log::diagnostic(const char* format, va_list ap)
 		m_buf_p[n] = '\n';
 		m_buf_p[n + 1] = '\0';
 		// exclude prefix for the file output
-		fputs(m_buf_p, stderr);
+//		fputs(m_buf_p, stderr);
+		std::cerr << m_buf_p;
 	}
 }
 
