@@ -54,24 +54,44 @@ void object_tools::save_skl(xray_re::xr_object& object, const char* source, cons
 {
 	std::string motion_name;
 	cl.get_string("-skl", motion_name);
-	xr_skl_motion* smotion = object.find_motion(motion_name);
-	if (smotion) {
-		std::string target;
-		if (m_output_file.empty()) {
-			std::string name;
-			xr_file_system::split_path(source, 0, &name);
-			target = m_output_folder;
-			target += name;
-			target += '_';
-			target += motion_name;
-			target += ".skl";
+	if (motion_name != "all") {
+		xr_skl_motion* smotion = object.find_motion(motion_name);
+		if (smotion) {
+			std::string target;
+			if (m_output_file.empty()) {
+				std::string name;
+				xr_file_system::split_path(source, 0, &name);
+				target = m_output_folder;
+				target += name;
+				target += '_';
+				target += motion_name;
+				target += ".skl";
+			} else {
+				target = m_output_file;
+			}
+			if (!smotion->save_skl(target.c_str()))
+				msg("can't save %s", target.c_str());
 		} else {
-			target = m_output_file;
+			msg("can't find motion %s", motion_name.c_str());
 		}
-		if (!smotion->save_skl(target.c_str()))
-			msg("can't save %s", target.c_str());
 	} else {
-		msg("can't find motion %s", motion_name.c_str());
+		for (xr_skl_motion_vec_it it = object.motions().begin(), end = object.motions().end(); it != end; ++it) {
+			std::string name, target;
+			xr_skl_motion* smotion = *it;
+			cl.get_string("-out", name);
+			if (!name.empty()) {
+				xr_file_system& fs = xr_file_system::instance();
+				fs.create_folder(name);
+				target = name;
+				target += "//";
+				target += smotion->name();
+			} else {
+				target = smotion->name();
+			}
+			target += ".skl";
+			if (!smotion->save_skl(target.c_str()))
+				msg("can't save %s", target.c_str());
+		}
 	}
 }
 
