@@ -52,7 +52,7 @@
 			<Tool
 				Name="VCCLCompilerTool"
 				Optimization="0"
-				AdditionalIncludeDirectories="..;&quot;C:\Program Files (x86)\NVIDIA GPU Computing Toolkit\CUDA\v4.0\include&quot;"
+				AdditionalIncludeDirectories="..;&quot;$(CUDA_PATH)\include&quot;"
 				PreprocessorDefinitions="WIN32;_DEBUG;_LIB;__SSE2__;__SSE__;__MMX__"
 				MinimalRebuild="true"
 				BasicRuntimeChecks="3"
@@ -73,7 +73,7 @@
 			<Tool
 				Name="VCLibrarianTool"
 				AdditionalDependencies="cudart.lib"
-				AdditionalLibraryDirectories="C:\Program Files (x86)\NVIDIA GPU Computing Toolkit\CUDA\v4.0\lib\Win32"
+				AdditionalLibraryDirectories="&quot;$(CUDA_PATH)\lib\Win32&quot;"
 			/>
 			<Tool
 				Name="VCALinkTool"
@@ -123,7 +123,7 @@
 			<Tool
 				Name="VCCLCompilerTool"
 				Optimization="0"
-				AdditionalIncludeDirectories="..;&quot;$NVIDIA_SDK\CUDA\v4.0\include&quot;"
+				AdditionalIncludeDirectories="..;&quot;$(CUDA_PATH_V5_0)\include&quot;"
 				PreprocessorDefinitions="WIN32;_DEBUG;_LIB;__SSE2__;__SSE__;__MMX__"
 				MinimalRebuild="true"
 				BasicRuntimeChecks="3"
@@ -144,7 +144,7 @@
 			<Tool
 				Name="VCLibrarianTool"
 				AdditionalDependencies="cudart.lib"
-				AdditionalLibraryDirectories="&quot;$NVIDIA_SDK\CUDA\v4.0\lib\x64&quot;"
+				AdditionalLibraryDirectories="&quot;$(CUDA_PATH_V5_0)\lib\x64&quot;"
 			/>
 			<Tool
 				Name="VCALinkTool"
@@ -197,7 +197,7 @@
 				EnableIntrinsicFunctions="true"
 				FavorSizeOrSpeed="1"
 				EnableFiberSafeOptimizations="true"
-				AdditionalIncludeDirectories="..;&quot;C:\Program Files (x86)\NVIDIA GPU Computing Toolkit\CUDA\v4.0\include&quot;"
+				AdditionalIncludeDirectories="..;&quot;$(CUDA_PATH)\include&quot;"
 				PreprocessorDefinitions="WIN32;NDEBUG;_LIB;__SSE2__;__SSE__;__MMX__"
 				StringPooling="true"
 				RuntimeLibrary="2"
@@ -218,7 +218,7 @@
 			<Tool
 				Name="VCLibrarianTool"
 				AdditionalDependencies="cudart.lib"
-				AdditionalLibraryDirectories="&quot;C:\Program Files (x86)\NVIDIA GPU Computing Toolkit\CUDA\v4.0\lib\Win32&quot;"
+				AdditionalLibraryDirectories="&quot;$(CUDA_PATH)\lib\Win32&quot;"
 			/>
 			<Tool
 				Name="VCALinkTool"
@@ -274,7 +274,7 @@
 				EnableIntrinsicFunctions="true"
 				FavorSizeOrSpeed="1"
 				EnableFiberSafeOptimizations="true"
-				AdditionalIncludeDirectories="..;&quot;$NVIDIA_SDK\CUDA\v4.0\include&quot;"
+				AdditionalIncludeDirectories="..;&quot;$(CUDA_PATH_V5_0)\include&quot;"
 				PreprocessorDefinitions="WIN32;NDEBUG;_LIB;__SSE2__;__SSE__;__MMX__"
 				StringPooling="true"
 				RuntimeLibrary="2"
@@ -294,7 +294,7 @@
 			<Tool
 				Name="VCLibrarianTool"
 				AdditionalDependencies="cudart.lib"
-				AdditionalLibraryDirectories="&quot;$NVIDIA_SDK\CUDA\v4.0\lib\x64&quot;"
+				AdditionalLibraryDirectories="&quot;$(CUDA_PATH_V5_0)\lib\x64&quot;"
 			/>
 			<Tool
 				Name="VCALinkTool"
@@ -347,7 +347,7 @@
 				EnableIntrinsicFunctions="true"
 				FavorSizeOrSpeed="1"
 				EnableFiberSafeOptimizations="true"
-				AdditionalIncludeDirectories="..;&quot;C:\Program Files (x86)\NVIDIA GPU Computing Toolkit\CUDA\v4.0\include&quot;"
+				AdditionalIncludeDirectories="..;&quot;$(CUDA_PATH)\include&quot;"
 				PreprocessorDefinitions="WIN32;NDEBUG;_LIB;__SSE2__;__SSE__;__MMX__;HAVE_CUDA"
 				StringPooling="true"
 				RuntimeLibrary="2"
@@ -368,7 +368,7 @@
 			<Tool
 				Name="VCLibrarianTool"
 				AdditionalDependencies="cudart.lib"
-				AdditionalLibraryDirectories="C:\Program Files (x86)\NVIDIA GPU Computing Toolkit\CUDA\v4.0\lib\Win32"
+				AdditionalLibraryDirectories="&quot;$(CUDA_PATH)\lib\Win32&quot;"
 			/>
 			<Tool
 				Name="VCALinkTool"
@@ -421,7 +421,7 @@
 				FavorSizeOrSpeed="1"
 				EnableFiberSafeOptimizations="true"
 				WholeProgramOptimization="true"
-				AdditionalIncludeDirectories="..;&quot;$NVIDIA_SDK\CUDA\v4.0\include&quot;"
+				AdditionalIncludeDirectories="..;&quot;$(CUDA_PATH_V5_0)\include&quot;"
 				PreprocessorDefinitions="WIN32;NDEBUG;_LIB;__SSE2__;__SSE__;__MMX__;HAVE_CUDA"
 				StringPooling="true"
 				RuntimeLibrary="2"
@@ -440,7 +440,7 @@
 			<Tool
 				Name="VCLibrarianTool"
 				AdditionalDependencies="cudart.lib"
-				AdditionalLibraryDirectories="&quot;$NVIDIA_SDK\CUDA\v4.0\lib\x64&quot;"
+				AdditionalLibraryDirectories="&quot;$(CUDA_PATH_V5_0)\lib\x64&quot;"
 			/>
 			<Tool
 				Name="VCALinkTool"
@@ -488,7 +488,7 @@
 			<Tool
 				Name="VCCLCompilerTool"
 				Optimization="0"
-				AdditionalIncludeDirectories="..;&quot;C:\Program Files (x86)\NVIDIA GPU Computing Toolkit\CUDA\v4.0\include&quot;"
+				AdditionalIncludeDirectories="..;&quot;$(CUDA_PATH)\include&quot;"
 				PreprocessorDefinitions="WIN32;_DEBUG;_LIB;__SSE2__;__SSE__;__MMX__;HAVE_CUDA"
 				MinimalRebuild="true"
 				BasicRuntimeChecks="3"
@@ -509,7 +509,7 @@
 			<Tool
 				Name="VCLibrarianTool"
 				AdditionalDependencies="cudart.lib"
-				AdditionalLibraryDirectories="C:\Program Files (x86)\NVIDIA GPU Computing Toolkit\CUDA\v4.0\lib\Win32"
+				AdditionalLibraryDirectories="&quot;$(CUDA_PATH)\lib\Win32&quot;"
 			/>
 			<Tool
 				Name="VCALinkTool"
@@ -559,7 +559,7 @@
 			<Tool
 				Name="VCCLCompilerTool"
 				Optimization="0"
-				AdditionalIncludeDirectories="..;&quot;$NVIDIA_SDK\CUDA\v4.0\include&quot;"
+				AdditionalIncludeDirectories="..;&quot;$(CUDA_PATH_V5_0)\include&quot;"
 				PreprocessorDefinitions="WIN32;_DEBUG;_LIB;__SSE2__;__SSE__;__MMX__;HAVE_CUDA"
 				MinimalRebuild="true"
 				BasicRuntimeChecks="3"
@@ -580,7 +580,7 @@
 			<Tool
 				Name="VCLibrarianTool"
 				AdditionalDependencies="cudart.lib"
-				AdditionalLibraryDirectories="&quot;$NVIDIA_SDK\CUDA\v4.0\lib\x64&quot;"
+				AdditionalLibraryDirectories="&quot;$(CUDA_PATH_V5_0)\lib\x64&quot;"
 			/>
 			<Tool
 				Name="VCALinkTool"
