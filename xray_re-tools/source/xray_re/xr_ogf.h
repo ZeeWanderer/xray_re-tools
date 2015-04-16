@@ -70,7 +70,7 @@ protected:
 	std::string		m_path;		// empty if embedded
 
 	ogf_version		m_version;	// OGF_HEADER
-	ogf_model_type		m_model_type;
+	ogf_model_type	m_model_type;
 	ogf_bbox		m_bbox;		// OGF_HEADER or OGF_BBOX (v3)
 	ogf_bsphere		m_bsphere;	// OGF_HEADER or OGF_BSPHERE (v3)
 

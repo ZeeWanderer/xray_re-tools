@@ -53,15 +53,15 @@ private:
 					ini_section(const char* _name);
 					~ini_section();
 
-		bool			line_exist(const char* lname, const char** lvalue) const;
-		void			merge(const ini_section* section);
-		size_t			size() const;
+		bool				line_exist(const char* lname, const char** lvalue) const;
+		void				merge(const ini_section* section);
+		size_t				size() const;
 		ini_item_vec_it		begin();
 		ini_item_vec_cit	begin() const;
 		ini_item_vec_it		end();
 		ini_item_vec_cit	end() const;
 
-		std::string		name;
+		std::string			name;
 		ini_item_vec		items;
 	};
 	TYPEDEF_STD_VECTOR_PTR(ini_section)
