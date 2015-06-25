@@ -1,7 +1,10 @@
-﻿syntax: glob
+syntax: glob
 binaries\
 intermediate\
 
+xray_re-tools\source\converter_ui\bld_vs2008\converter.ini
+xray_re-tools\source\converter_ui\bld_vs2008\fsconverter.ltx
+xray_re-tools\source\converter_ui\bld_vs2008\logs\converter.log
 syntax: regexp
 \.ncb$
 \.suo$
