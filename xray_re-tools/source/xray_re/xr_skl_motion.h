@@ -65,7 +65,7 @@ const uint16_t ALL_PARTITIONS = UINT16_MAX;
 
 class xr_skl_motion: public xr_motion {
 public:
-			xr_skl_motion();
+				 xr_skl_motion();
 	virtual 	~xr_skl_motion();
 
 	virtual void	load(xr_reader& r);
@@ -78,12 +78,14 @@ public:
 	const xr_bone_motion_vec&	bone_motions() const;
 	xr_bone_motion_vec&		bone_motions();
 
+		int		marks_size();
+
 	uint8_t		bone_motion_flags(uint16_t bone_id) const;
 
 	enum motion_flag {
-		SMF_FX		= 0x1,
+		SMF_FX			= 0x1,
 		SMF_STOP_AT_END	= 0x2,
-		SMF_NO_MIX	= 0x4,
+		SMF_NO_MIX		= 0x4,
 		SMF_SYNC_PART	= 0x8,
 	};
 
@@ -126,6 +128,10 @@ inline const xr_bone_motion_vec& xr_skl_motion::bone_motions() const
 inline xr_bone_motion_vec& xr_skl_motion::bone_motions()
 {
 	return m_bone_motions;
+}
+inline int xr_skl_motion::marks_size()
+{
+	return m_marks.size();
 }
 
 } // end of namespace xray_re

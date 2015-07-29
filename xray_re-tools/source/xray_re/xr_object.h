@@ -104,21 +104,21 @@ protected:
 	virtual xr_surface*	create_surface(const xr_raw_surface& raw_surface) const;
 
 protected:
-	uint32_t		m_flags;	// EOBJ_CHUNK_FLAGS
-	std::string		m_userdata;	// EOBJ_CHUNK_USERDATA
-	std::string		m_lod_ref;	// EOBJ_CHUNK_LOD_REF
-	xr_surface_vec		m_surfaces;	// EOBJ_CHUNK_SURFACES_X
-	xr_mesh_vec		m_meshes;	// EOBJ_CHUNK_MESHES
-	xr_bone_vec		m_bones;	// EOBJ_CHUNK_BONES_X
-	xr_skl_motion_vec	m_motions;	// EOBJ_CHUNK_MOTIONS
-	std::string		m_motion_refs;	// EOBJ_CHUNK_MOTION_REFS
+	uint32_t			m_flags;		// EOBJ_CHUNK_FLAGS
+	std::string			m_userdata;		// EOBJ_CHUNK_USERDATA
+	std::string			m_lod_ref;		// EOBJ_CHUNK_LOD_REF
+	xr_surface_vec		m_surfaces;		// EOBJ_CHUNK_SURFACES_X
+	xr_mesh_vec			m_meshes;		// EOBJ_CHUNK_MESHES
+	xr_bone_vec			m_bones;		// EOBJ_CHUNK_BONES_X
+	xr_skl_motion_vec	m_motions;		// EOBJ_CHUNK_MOTIONS
+	std::string			m_motion_refs;	// EOBJ_CHUNK_MOTION_REFS
 	xr_partition_vec	m_partitions;	// EOBJ_CHUNK_PARTITIONS_X
-	fvector3		m_position;	// EOBJ_CHUNK_TRANSFORM
-	fvector3		m_rotation;
-	std::string		m_owner_name;	// EOBJ_CHUNK_REVISION
-	uint32_t		m_creation_time;
-	std::string		m_modif_name;
-	uint32_t		m_modified_time;
+	fvector3			m_position;		// EOBJ_CHUNK_TRANSFORM
+	fvector3			m_rotation;
+	std::string			m_owner_name;	// EOBJ_CHUNK_REVISION
+	uint32_t			m_creation_time;
+	std::string			m_modif_name;
+	uint32_t			m_modified_time;
 
 	const xr_surface_factory*
 				m_surface_factory;
