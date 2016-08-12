@@ -1704,7 +1704,9 @@ void cse_alife_level_changer::state_write(xr_packet& packet)
 	packet.w_u32(m_next_node_id);
 	packet.w_vec3(m_next_position);
 	packet.w_vec3(m_angles);
-	packet.w_sz(m_level_to_change);
+	packet.w_float(m_next_position.x);
+	packet.w_float(m_next_position.y);
+	packet.w_float(m_next_position.z);
 	packet.w_sz(m_level_point_to_change);
 	if (m_version > CSE_VERSION_0x74)
 		packet.w_bool(m_silent_mode);
