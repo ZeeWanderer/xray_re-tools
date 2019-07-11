@@ -10,7 +10,7 @@
       <Extensions>rc;ico;cur;bmp;dlg;rc2;rct;bin;rgs;gif;jpg;jpeg;jpe;resx;tiff;tif;png;wav</Extensions>
     </Filter>
     <Filter Include="core">
-      <UniqueIdentifier>{5b4c03f5-2bba-42d8-af12-8b7d228b3590}</UniqueIdentifier>
+      <UniqueIdentifier>{4cc4e242-6619-4d49-bba8-169509f0ddc4}</UniqueIdentifier>
     </Filter>
   </ItemGroup>
   <ItemGroup>

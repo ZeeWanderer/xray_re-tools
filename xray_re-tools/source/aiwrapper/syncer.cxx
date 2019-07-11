@@ -1,3 +1,4 @@
+#include <memory>
 #include "xr_ai_version.h"
 #include "xr_level_game.h"
 #include "xr_level_graph.h"

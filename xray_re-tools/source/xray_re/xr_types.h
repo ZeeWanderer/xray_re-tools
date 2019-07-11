@@ -32,7 +32,7 @@ typedef	INT_PTR		intptr_t;
 //const uint32_t UINT32_MAX = 0xffffffff;
 //const uint64_t UINT64_MAX = 0xffffffffffffffffull;
 
-#ifdef _WIN64
+//#ifdef _WIN64
 //typedef UINT64 uint_fast32_t;
 //typedef INT64 int_fast32_t;
 //typedef UINT64 uint_fast16_t;
@@ -40,14 +40,14 @@ typedef	INT_PTR		intptr_t;
 
 //const uint_fast32_t UINT_FAST32_MAX = UINT64_MAX;
 
-#else
-typedef _w64 UINT32 uint_fast32_t;
-typedef _w64 INT32 int_fast32_t;
-typedef _w64 UINT32 uint_fast16_t;
-typedef _w64 INT32 int_fast16_t;
-
-const uint32_t UINT_FAST32_MAX = UINT32_MAX;
-#endif
+//#else
+//typedef _w64 UINT32 uint_fast32_t;
+//typedef _w64 INT32 int_fast32_t;
+//typedef _w64 UINT32 uint_fast16_t;
+//typedef _w64 INT32 int_fast16_t;
+//
+//const uint32_t UINT_FAST32_MAX = UINT32_MAX;
+//#endif
 
 #define PRIu32		"I32u"
 #define PRIx32		"I32x"

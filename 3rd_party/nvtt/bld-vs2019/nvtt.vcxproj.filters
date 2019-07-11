@@ -314,13 +314,11 @@
     <ClInclude Include="..\nvconfig.h" />
   </ItemGroup>
   <ItemGroup>
-    <None Include="..\nvtt\cuda\CompressKernel.cu">
-      <Filter>nvtt\cuda</Filter>
-    </None>
-  </ItemGroup>
-  <ItemGroup>
     <CustomBuild Include="..\nvtt\squish\fastclusterlookup.inl">
       <Filter>nvtt\squish</Filter>
     </CustomBuild>
+  </ItemGroup>
+  <ItemGroup>
+    <CudaCompile Include="..\nvtt\cuda\CompressKernel.cu" />
   </ItemGroup>
 </Project>
