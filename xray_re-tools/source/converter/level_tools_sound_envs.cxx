@@ -1,3 +1,4 @@
+#include <memory>
 #include "xr_level.h"
 #include "xr_level_snd_env.h"
 #include "xr_scene.h"

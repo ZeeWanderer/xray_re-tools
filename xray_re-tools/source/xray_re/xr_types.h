@@ -8,6 +8,7 @@
 
 #define NOMINMAX
 #include <basetsd.h>
+#include <cstdint>
 
 typedef UINT64		uint64_t;
 typedef INT64		int64_t;
@@ -21,23 +22,23 @@ typedef	UINT_PTR	uintptr_t;
 typedef	INT_PTR		intptr_t;
 
 
-const int16_t INT16_MIN = -32768;
+//const int16_t INT16_MIN = -32768;
 
-const int16_t INT16_MAX = 0x7fff;
-const int32_t INT32_MAX = 0x7fffffff;
+//const int16_t INT16_MAX = 0x7fff;
+//const int32_t INT32_MAX = 0x7fffffff;
 
-const uint8_t UINT8_MAX = 0xff;
-const uint16_t UINT16_MAX = 0xffff;
-const uint32_t UINT32_MAX = 0xffffffff;
-const uint64_t UINT64_MAX = 0xffffffffffffffffull;
+//const uint8_t UINT8_MAX = 0xff;
+//const uint16_t UINT16_MAX = 0xffff;
+//const uint32_t UINT32_MAX = 0xffffffff;
+//const uint64_t UINT64_MAX = 0xffffffffffffffffull;
 
 #ifdef _WIN64
-typedef UINT64 uint_fast32_t;
-typedef INT64 int_fast32_t;
-typedef UINT64 uint_fast16_t;
-typedef INT64 int_fast16_t;
+//typedef UINT64 uint_fast32_t;
+//typedef INT64 int_fast32_t;
+//typedef UINT64 uint_fast16_t;
+//typedef INT64 int_fast16_t;
 
-const uint_fast32_t UINT_FAST32_MAX = UINT64_MAX;
+//const uint_fast32_t UINT_FAST32_MAX = UINT64_MAX;
 
 #else
 typedef _w64 UINT32 uint_fast32_t;

@@ -5,6 +5,7 @@
 #define __XR_GEOM_BUF_H__
 
 #include <vector>
+#include <memory>
 #include "xr_vector2.h"
 #include "xr_vector3.h"
 #include "xr_color.h"

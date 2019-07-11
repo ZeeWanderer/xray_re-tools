@@ -1,3 +1,4 @@
+#include <memory>
 #include "xr_ai_version.h"
 #include "xr_ai_cross_table.h"
 #include "xr_level_gct.h"

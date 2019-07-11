@@ -48,7 +48,7 @@
 #define IS_NEGATIVE_FLOAT(x)	(IR(x)&SIGN_BITMASK)
 */
 
-inline double sqrt_assert(const double f)
+extern "C" inline double sqrt_assert(const double f)
 {
 	nvDebugCheck(f >= 0.0f);
 	return sqrt(f);
@@ -60,7 +60,7 @@ inline float sqrtf_assert(const float f)
 	return sqrtf(f);
 }
 
-inline double acos_assert(const double f)
+extern "C" inline double acos_assert(const double f)
 {
 	nvDebugCheck(f >= -1.0f && f <= 1.0f);
 	return acos(f);
@@ -72,7 +72,7 @@ inline float acosf_assert(const float f)
 	return acosf(f);
 }
 
-inline double asin_assert(const double f)
+extern "C" inline double asin_assert(const double f)
 {
 	nvDebugCheck(f >= -1.0f && f <= 1.0f);
 	return asin(f);
@@ -85,12 +85,14 @@ inline float asinf_assert(const float f)
 }
 
 // Replace default functions with asserting ones.
+#if !NV_CC_MSVC || (NV_CC_MSVC && (_MSC_VER < 1700))    // IC: Apparently this was causing problems in Visual Studio 2012. See Issue 194: https://code.google.com/p/nvidia-texture-tools/issues/detail?id=194
 #define sqrt sqrt_assert
 #define sqrtf sqrtf_assert
 #define acos acos_assert
 #define acosf acosf_assert
 #define asin asin_assert
 #define asinf asinf_assert
+#endif
 
 #if NV_OS_WIN32
 #include <float.h>

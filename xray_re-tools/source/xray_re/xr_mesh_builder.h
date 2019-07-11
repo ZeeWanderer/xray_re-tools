@@ -6,6 +6,7 @@
 
 #include <vector>
 #include <string>
+#include <memory>
 #include "xr_mesh.h"
 #include "xr_mesh_vbuf.h"
 #include "xr_surface.h"
