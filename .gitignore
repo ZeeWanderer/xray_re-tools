@@ -1,5 +1,6 @@
 /binaries
 /intermediate
+.vs/
 
 xray_re-tools\source\converter_ui\bld_vs2008\converter.ini
 xray_re-tools\source\converter_ui\bld_vs2008\fsconverter.ltx
